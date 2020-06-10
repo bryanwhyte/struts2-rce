@@ -26,3 +26,9 @@ steps:
     nexusIqService: 'Whyte-RedHat'
     applicationId: 'Struts2-rce'
     stage: 'Build'
+
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'Whyte-RedHat'
+    applicationId: 'Struts2-rce'
+    stage: 'stage-release'
