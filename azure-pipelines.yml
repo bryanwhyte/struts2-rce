@@ -20,7 +20,12 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-    
+
+- task: SonatypeCloudPipelineTask@0
+  inputs:
+    SonatypeCloudService: 'Sonatype Cloud - Maury''s Key'
+    stage: 'Build'
+
 - task: NexusIqPipelineTask@1
   inputs:
     nexusIqService: 'ngrok-localhost'
@@ -32,7 +37,3 @@ steps:
     nexusIqService: 'ngrok-localhost'
     applicationId: 'Struts2-rce'
     stage: 'stage-release'
-- task: SonatypeCloudPipelineTask@0
-  inputs:
-    SonatypeCloudService: 'Sonatype Cloud - Maury''s Key'
-    stage: 'Build'
