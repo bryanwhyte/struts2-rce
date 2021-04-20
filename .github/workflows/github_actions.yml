@@ -24,7 +24,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    name: Nexus IQ Policy Evaluation
+    - name: Nexus IQ Policy Evaluation
       uses: sonatype-nexus-community/iq-github-action@master
       with:
         serverUrl: http://iq.ngrok.io
