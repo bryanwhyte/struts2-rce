@@ -28,6 +28,6 @@ steps:
 
 - task: NexusIqPipelineTask@1
   inputs:
-    nexusIqService: 'ngrok-localhost'
+    nexusIqService: 'iq.bwhyte.ngrok.io'
     applicationId: 'Struts2-rce'
     stage: 'stage-release'
