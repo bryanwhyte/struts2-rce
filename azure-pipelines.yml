@@ -30,6 +30,7 @@ steps:
   inputs:
     versionSpec: '17' 
     jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
 
 - task: NexusIqPipelineTask@1
   inputs:
