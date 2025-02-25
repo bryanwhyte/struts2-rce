@@ -26,6 +26,11 @@ steps:
 #     SonatypeCloudService: 'Sonatype Cloud - Maury''s Key'
 #     stage: 'Build'
 
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '17' 
+    jdkArchitectureOption: 'x64'
+
 - task: NexusIqPipelineTask@1
   inputs:
     nexusIqService: 'iq.bwhyte.ngrok.io'
