@@ -35,13 +35,13 @@ steps:
 - task: NexusIqPipelineTask@1
   inputs:
     nexusIqService: 'iq.bwhyte.ngrok.io'
-    applicationId: 'Struts2-rce'
+    applicationId: 'ado-Struts2-rce'
     stage: 'build'
 
 
 - task: NexusIqPipelineTask@2
   inputs:
     nexusIqService: 'iq.bwhyte.ngrok.io'
-    applicationId: 'Struts2-rce'
+    applicationId: 'ado-Struts2-rce'
     stage: 'stage-release'
     enableCallflow: true
