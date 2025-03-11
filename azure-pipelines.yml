@@ -38,5 +38,5 @@ steps:
   inputs:
     nexusIqService: 'iq.bwhyte.ngrok.io'
     applicationId: 'ado-Struts2-rce'
-    stage: 'stage-release'
+    stage: 'release'
     enableCallflow: true
