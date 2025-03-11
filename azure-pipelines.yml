@@ -21,11 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-# - task: SonatypeCloudPipelineTask@0
-#   inputs:
-#     SonatypeCloudService: 'Sonatype Cloud - Maury''s Key'
-#     stage: 'Build'
-
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '17' 
